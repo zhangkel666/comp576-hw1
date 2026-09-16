@@ -1,0 +1,11 @@
+name: comp576
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - ipython
+  - jupyter
+  - matplotlib
+  - numpy
+  - scipy
+

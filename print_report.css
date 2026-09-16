@@ -1,0 +1,154 @@
+@page {
+  size: A4;
+  margin: 16mm 17mm 17mm 17mm;
+}
+
+html,
+body {
+  background: #ffffff !important;
+  color: #111827 !important;
+  font-family: Arial, "Helvetica Neue", sans-serif !important;
+  font-size: 11.5pt !important;
+  line-height: 1.42 !important;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.jp-Notebook {
+  margin: 0 auto !important;
+  padding: 0 !important;
+  max-width: none !important;
+}
+
+.jp-Cell {
+  margin: 0 0 10pt 0 !important;
+  padding: 0 !important;
+}
+
+.jp-MarkdownOutput {
+  font-size: 11.5pt !important;
+  line-height: 1.42 !important;
+}
+
+.jp-MarkdownOutput h1 {
+  font-size: 22pt !important;
+  line-height: 1.16 !important;
+  margin: 0 0 11pt !important;
+}
+
+.jp-MarkdownOutput h2 {
+  color: #17365d !important;
+  font-size: 16.5pt !important;
+  line-height: 1.2 !important;
+  margin: 20pt 0 8pt !important;
+  padding-bottom: 3pt !important;
+  border-bottom: 1.2pt solid #9db2ce !important;
+  break-after: avoid-page;
+}
+
+.jp-MarkdownOutput h3 {
+  color: #284b73 !important;
+  font-size: 13.5pt !important;
+  line-height: 1.25 !important;
+  margin: 15pt 0 6pt !important;
+  break-after: avoid-page;
+}
+
+.jp-MarkdownOutput p {
+  margin: 5pt 0 8pt !important;
+}
+
+.jp-InputPrompt,
+.jp-OutputPrompt,
+.jp-OutputArea-prompt,
+.jp-InputArea-prompt {
+  display: none !important;
+  width: 0 !important;
+  min-width: 0 !important;
+}
+
+.jp-InputArea,
+.jp-OutputArea-child {
+  display: block !important;
+}
+
+.jp-InputArea-editor,
+.jp-OutputArea-output {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.jp-CodeCell .jp-InputArea {
+  border: 0.7pt solid #cbd5e1 !important;
+  border-left: 3pt solid #4f76a1 !important;
+  border-radius: 3pt !important;
+  background: #f7f9fc !important;
+  padding: 7pt 8pt !important;
+  break-inside: avoid-page;
+}
+
+.jp-CodeCell .jp-OutputArea {
+  margin: 4pt 0 9pt 0 !important;
+  padding: 0 3pt !important;
+}
+
+pre,
+code,
+.jp-CodeMirrorEditor,
+.highlight {
+  font-family: "DejaVu Sans Mono", "Liberation Mono", monospace !important;
+}
+
+.jp-InputArea pre,
+.jp-OutputArea pre,
+.jp-MarkdownOutput pre {
+  color: #111827 !important;
+  font-size: 10pt !important;
+  line-height: 1.32 !important;
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+}
+
+.jp-MarkdownOutput pre {
+  background: #f5f7fa !important;
+  border: 0.7pt solid #d7dee8 !important;
+  border-radius: 3pt !important;
+  padding: 8pt 10pt !important;
+}
+
+.jp-RenderedImage,
+.jp-RenderedImage img,
+.jp-OutputArea img {
+  display: block !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 6pt auto !important;
+  break-inside: avoid-page;
+}
+
+a {
+  color: #1d4f91 !important;
+  text-decoration: none !important;
+}
+
+@media print {
+  .jp-Notebook > .jp-Cell:nth-child(4),
+  .jp-Notebook > .jp-Cell:nth-child(18),
+  .jp-Notebook > .jp-Cell:nth-child(20),
+  .jp-Notebook > .jp-Cell:nth-child(22) {
+    break-before: page;
+  }
+
+  .jp-MarkdownOutput h1,
+  .jp-MarkdownOutput h2,
+  .jp-MarkdownOutput h3,
+  .jp-CodeCell .jp-InputArea,
+  .jp-OutputArea-child,
+  .jp-RenderedImage {
+    break-inside: avoid-page;
+  }
+}
